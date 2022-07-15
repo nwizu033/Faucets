@@ -1,0 +1,163 @@
+html, body {
+    height: 100%;
+
+}
+
+ .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(226, 197, 253);
+
+  
+}
+
+.container .navbar{
+    display: flex;
+    height:10%;
+    background-color: rgb(250, 250, 250);
+    justify-content: space-between;
+    
+}
+
+.navbar li{
+    list-style-type: none;
+    font-size: 2em;
+    color: rgb(83, 59, 241); 
+    padding-top: 1%;
+    padding-left: 50px;
+    
+}
+
+li:hover{
+    color: black;
+}
+
+#sign-in {
+    border-radius: 50px;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(83, 59, 241);
+    opacity: 0.7;
+    margin-right: 50px;
+}
+ #sign-in:hover{
+    background-color: black;
+ }
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: medium;
+}
+.container .remainder{
+    margin: 10% auto;
+    width: 100%;  
+    background-color: rgb(226, 197, 253);
+    opacity: 0.7;
+}
+
+#main-content{
+    width: 60%;
+    margin: auto auto;
+    border-radius: 20px;
+    background-color: rgb(83, 59, 241);
+  
+}
+
+#main-content p{
+    text-align: justify;
+    padding-left:10px;
+    padding-right: 10px;
+    color: aliceblue;
+    font-size: medium;
+}
+
+.form-part{
+    width: 100%;
+}
+
+#faucet{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 3%;
+    font-weight: bolder;
+}
+input, select{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.full {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+#submit-btn{
+    padding: 5px 10px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+#submit-btn:hover{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width:600px) {
+
+    .navbar li{
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+
+    #sign-in {
+        font-size:1rem ;
+        border-radius: 50px;
+        font-weight: 150;
+        width:80px;
+        margin-right: 15px;
+        line-height: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .container{
+        width: 100%;
+      
+    }
+    #faucet{
+        padding-top: 2%;
+        font-weight: bolder;
+        font-size: 2rem;
+        width: 100%
+        text-align: center;
+    }
+
+    .full {
+        width: 100%;
+        padding: 5px 10px;
+        margin: 5px auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+    #main-content p{
+        text-align: justify;
+        padding-left:10px;
+        padding-right: 10px;
+        font-size: small;
+    }
+
+    #submit-btn{
+      
+        margin: auto;
+        display: block;
+    }
+}

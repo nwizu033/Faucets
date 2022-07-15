@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faucet Transfer Box</title>
+    <link rel="stylesheet" href="transfer.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script
+        src="https://github.com/WalletConnect/walletconnect-monorepo/releases/download/1.7.1/web3-provider.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="container">
+     <div class="navbar">
+        <li> <i class="fa-solid fa-coins"></i>The 4Empire Faucet</li>
+        <button onclick="login()" id="sign-in"><a href="#"> Connect Wallet</a></button>
+    </div>
+
+<div class="remainder">
+    <div id="main-content">
+    <h1 id="faucet">Get Your Test Tokens Here</h1>
+    <p>Welcome to 4Empire faucets, get your tokens and build that amazing project you love. This faucet transfers
+        token on bsc testnets only. Confirm details before submitting.</p>
+<div class="form-part">
+    <input type="text" class="full" id="wallAdd" placeholder="Reciever's Address"> <br>
+    <input type="text"  class="full" id="amount" placeholder="Amount (10 - 5000 tokens)"> <br>
+    
+    <select class="full" name="tokens" id="tokenSelect"> 
+        <option disabled hidden selected>Name of Token...</option>
+        <option id="nwi" value="0x2D720563579C30C20e92b9793E35E03a7da084D0">Nwizu token (NWU)</option>
+        <option id="kdt" value="0x84BDd924bfbA0b9299f8173749c41b027920b4a2">Kalada token (KDT)</option>
+        <option id="pat" value="0xc3E987b94a495554DAC3c53aBa0680ef9c568728">Paul token (PAT)</option>
+        <option id="dat" value="0x762c28774E000db581e69526B43f09CcBB32b73f">Daniel token (DAT)</option>
+    </select><br>
+    
+    <input id="submit-btn" onclick="transfer()" type="submit" value="Send Token">
+      </div>
+    </div>
+</div>
+    <script src="transferbox.js"></script>
+</body>
+</html>
